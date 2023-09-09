@@ -1,4 +1,4 @@
-module first_app_in_gin.com
+module github.com/jamshid/go_crud
 
 go 1.20
 
@@ -27,6 +27,7 @@ require (
 	github.com/leodido/go-urn v1.2.4 // indirect
 	github.com/mattn/go-colorable v0.1.4 // indirect
 	github.com/mattn/go-isatty v0.0.19 // indirect
+	github.com/mattn/go-sqlite3 v1.14.17 // indirect
 	github.com/modern-go/concurrent v0.0.0-20180306012644-bacd9c7ef1dd // indirect
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/pelletier/go-toml/v2 v2.1.0 // indirect
@@ -41,5 +42,6 @@ require (
 	google.golang.org/protobuf v1.31.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	gorm.io/driver/postgres v1.5.2 // indirect
+	gorm.io/driver/sqlite v1.5.3 // indirect
 	gorm.io/gorm v1.25.4 // indirect
 )
