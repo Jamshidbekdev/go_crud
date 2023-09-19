@@ -1,6 +1,8 @@
 package controllers
 
 import (
+	"net/http"
+
 	"github.com/gin-gonic/gin"
 	"github.com/jamshid/go_crud/initializers"
 	"github.com/jamshid/go_crud/models"
@@ -48,10 +50,14 @@ func IndexPost(c *gin.Context) {
 	//get all post data
 	initializers.DB.Find(&posts) // pass pointer of data to get
 
-	// return response post data with status 200
-	c.JSON(200, gin.H{
+	c.HTML(http.StatusOK, "post.tmpl", gin.H{
 		"posts": posts,
 	})
+
+	// // return response post data with status 200
+	// c.JSON(200, gin.H{
+	// 	"posts": posts,
+	// })
 }
 
 func ShowPost(c *gin.Context) {

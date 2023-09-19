@@ -13,6 +13,8 @@ var DB *gorm.DB
 func ConnectToDb() {
 	var err error
 	dsn := os.Getenv("DB_URL")
+
+	// Creating Database instance
 	DB, err = gorm.Open(postgres.Open(dsn), &gorm.Config{})
 
 	if err != nil {
